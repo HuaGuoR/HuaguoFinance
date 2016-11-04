@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterController">
+            <connections>
+                <outlet property="_obtainVerifiBtn" destination="c7f-Fj-Q6Y" id="Hf7-J6-HVJ"/>
+                <outlet property="_passConfirmField" destination="a24-Ta-box" id="kU8-xd-SLV"/>
+                <outlet property="_passwordField" destination="bJh-fH-Lwq" id="MGP-G5-a2u"/>
+                <outlet property="_telNumField" destination="rH2-Pc-KUF" id="7We-dr-XZr"/>
+                <outlet property="_userNameField" destination="kT4-l8-UQG" id="0Xl-hB-h3q"/>
+                <outlet property="_verificationCodeField" destination="FZT-bj-bYq" id="BWV-Am-I6s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_registe_top_part.png" id="muL-Dv-GDV">
+                    <rect key="frame" x="9" y="20" width="302" height="135"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_registe_username.png" id="spn-bP-NS6">
+                    <rect key="frame" x="24" y="35" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户名" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="whileEditing" id="kT4-l8-UQG">
+                    <rect key="frame" x="49" y="20" width="254" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xKj-tc-PpW"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_seperate.png" id="pQU-A8-aoa">
+                    <rect key="frame" x="46" y="65" width="254" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_login_password.png" id="Nb5-rA-vcr">
+                    <rect key="frame" x="24" y="79" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" clearButtonMode="whileEditing" id="bJh-fH-Lwq">
+                    <rect key="frame" x="49" y="65" width="254" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="syn-ye-b39"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_seperate.png" id="sY3-qt-zDQ">
+                    <rect key="frame" x="46" y="110" width="254" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_registe_password_confirm.png" id="fXN-Za-RUR">
+                    <rect key="frame" x="23" y="124" width="19" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="再次输入密码" minimumFontSize="17" clearButtonMode="whileEditing" id="a24-Ta-box">
+                    <rect key="frame" x="49" y="110" width="254" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="zk2-lz-yxp"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_registe_bottom_part.png" id="CYK-Wo-u1t">
+                    <rect key="frame" x="9" y="169" width="302" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_registe_cellphone_number.png" id="kNM-Bp-3xG">
+                    <rect key="frame" x="25" y="183" width="14" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号码" minimumFontSize="17" clearButtonMode="whileEditing" id="rH2-Pc-KUF">
+                    <rect key="frame" x="49" y="169" width="254" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="HKN-qf-b7l"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_seperate.png" id="G69-Jn-7EI">
+                    <rect key="frame" x="46" y="215" width="254" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_registe_validate_code.png" id="BHl-4Z-OJV">
+                    <rect key="frame" x="24" y="227" width="17" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入验证码" minimumFontSize="17" clearButtonMode="whileEditing" id="FZT-bj-bYq">
+                    <rect key="frame" x="49" y="214" width="165" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Rek-ip-OOI"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="c7f-Fj-Q6Y">
+                    <rect key="frame" x="210" y="221" width="93" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="获取验证码" backgroundImage="bg_send_validate_code.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="obtainVerifiAction:" destination="-1" eventType="touchUpInside" id="c8i-xE-H2Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Le3-cy-G6B">
+                    <rect key="frame" x="9" y="277" width="302" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="注册" backgroundImage="bg_btn_registe_registe.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="kP6-LL-YK0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_btn_registe_registe.png" width="300" height="40"/>
+        <image name="bg_registe_bottom_part.png" width="302" height="90"/>
+        <image name="bg_registe_top_part.png" width="302" height="140"/>
+        <image name="bg_send_validate_code.png" width="110" height="34"/>
+        <image name="ic_login_password.png" width="14" height="16"/>
+        <image name="ic_registe_cellphone_number.png" width="12" height="16"/>
+        <image name="ic_registe_password_confirm.png" width="18" height="17"/>
+        <image name="ic_registe_username.png" width="16" height="16"/>
+        <image name="ic_registe_validate_code.png" width="17" height="17"/>
+        <image name="line_seperate.png" width="254" height="1"/>
+    </resources>
+</document>

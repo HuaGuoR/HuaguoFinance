@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineController">
+            <connections>
+                <outlet property="goupName" destination="AhS-AW-QeT" id="0oU-lw-718"/>
+                <outlet property="lockMoney" destination="yDm-I8-lb4" id="O1q-S4-0LU"/>
+                <outlet property="money" destination="0dg-Cf-OQ8" id="wF6-hK-4og"/>
+                <outlet property="scrollview" destination="euo-Sw-VSS" id="aGx-eQ-VUM"/>
+                <outlet property="toalMoney" destination="h4X-8Q-cDm" id="Tyl-OO-LbZ"/>
+                <outlet property="userName" destination="fIn-Nc-69c" id="V7t-L6-CD8"/>
+                <outlet property="view" destination="euo-Sw-VSS" id="Eou-Xm-rYU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="euo-Sw-VSS">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="Q9n-iC-hBb">
+                    <rect key="frame" x="0.0" y="1" width="320" height="140"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_personal_center_top_bar.png" id="OkQ-nO-leT">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fIn-Nc-69c">
+                            <rect key="frame" x="20" y="27" width="108" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AhS-AW-QeT">
+                            <rect key="frame" x="111" y="28" width="66" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" backgroundImage="bg_personal_center_user_level.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_personal_center_user_money_bar.png" id="fKu-zu-ffB">
+                            <rect key="frame" x="0.0" y="80" width="320" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_vertical_seperate.png" id="Ydb-UJ-FQf">
+                            <rect key="frame" x="107" y="91" width="107" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h4X-8Q-cDm">
+                            <rect key="frame" x="4" y="86" width="99" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.2627450980392157" green="0.21568627450980393" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资金金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="naY-p4-xeA">
+                            <rect key="frame" x="4" y="113" width="99" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0dg-Cf-OQ8">
+                            <rect key="frame" x="111" y="86" width="99" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="0.29019607843137252" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可用金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Ia-kM-ceD">
+                            <rect key="frame" x="111" y="113" width="99" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.56078431370000004" green="0.56078431370000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yDm-I8-lb4">
+                            <rect key="frame" x="219" y="86" width="99" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冻结金额" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zwi-Sd-snk">
+                            <rect key="frame" x="219" y="113" width="99" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.56078431370000004" green="0.56078431370000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="Jry-9E-XVt">
+                    <rect key="frame" x="10" y="150" width="300" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nPY-dG-xR8">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="充值提现" backgroundImage="block_whole_01.png">
+                                <color key="titleColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="block_whole_02.png"/>
+                            <connections>
+                                <action selector="myCharge:" destination="-1" eventType="touchUpInside" id="ucg-fy-Y9M"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_recharge_withdrawals.png" id="vix-9d-eW9">
+                            <rect key="frame" x="14" y="12" width="26" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right_more.png" id="vuh-eq-cmm">
+                            <rect key="frame" x="280" y="17" width="9" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="bx2-iQ-Zts">
+                    <rect key="frame" x="10" y="210" width="300" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bSx-FU-V7d">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="我的投资" backgroundImage="block_top_01.png">
+                                <color key="titleColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="block_top_02.png"/>
+                            <connections>
+                                <action selector="myInvestAction:" destination="-1" eventType="touchUpInside" id="PGc-oz-R49"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_my_investment.png" id="pb5-Yg-yY9">
+                            <rect key="frame" x="14" y="13" width="26" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right_more.png" id="WLv-eC-IkF">
+                            <rect key="frame" x="280" y="17" width="9" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_seperate.png" id="yuj-oN-1I5">
+                            <rect key="frame" x="1" y="50" width="298" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AmG-P6-Kbo">
+                            <rect key="frame" x="0.0" y="50" width="300" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="债券转让" backgroundImage="block_middle_01.png">
+                                <color key="titleColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="block_middle_02.png"/>
+                            <connections>
+                                <action selector="myTransferAction:" destination="-1" eventType="touchUpInside" id="1LN-lE-yaw"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bond_transfer.png" id="cn9-zo-bcl">
+                            <rect key="frame" x="16" y="63" width="22" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right_more.png" id="RVF-LB-b4b">
+                            <rect key="frame" x="280" y="66" width="9" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_seperate.png" id="Ikm-pF-R7d">
+                            <rect key="frame" x="1" y="100" width="298" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dtx-Ec-hnB">
+                            <rect key="frame" x="0.0" y="100" width="300" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="我关注的标" backgroundImage="block_middle_01.png">
+                                <color key="titleColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="block_middle_02.png"/>
+                            <connections>
+                                <action selector="myCollectAction:" destination="-1" eventType="touchUpInside" id="kDx-DP-e36"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_my_interest_bid.png" id="oIH-lz-G2L">
+                            <rect key="frame" x="15" y="114" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right_more.png" id="dxo-7v-ev8">
+                            <rect key="frame" x="280" y="117" width="9" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sgv-S9-Vr9">
+                            <rect key="frame" x="0.0" y="149" width="300" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="投标记录" backgroundImage="block_bottom_01.png">
+                                <color key="titleColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="block_bottom_02.png"/>
+                            <connections>
+                                <action selector="myLendAction:" destination="-1" eventType="touchUpInside" id="v0k-Js-0L1"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bid_recorder.png" id="4Pw-gT-OH2">
+                            <rect key="frame" x="17" y="160" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right_more.png" id="cCU-XF-h0o">
+                            <rect key="frame" x="280" y="167" width="9" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_seperate.png" id="Qig-Xp-aqt">
+                            <rect key="frame" x="1" y="150" width="298" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="VhI-VK-E2e">
+                    <rect key="frame" x="10" y="420" width="300" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IYY-lt-2NC">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="偿还贷款" backgroundImage="block_top_01.png">
+                                <color key="titleColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="block_top_02.png"/>
+                            <connections>
+                                <action selector="reFundAction:" destination="-1" eventType="touchUpInside" id="zBE-Ol-ocW"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_repay_loans.png" id="UaZ-de-ejU">
+                            <rect key="frame" x="17" y="14" width="23" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right_more.png" id="Ecc-eb-Vc4">
+                            <rect key="frame" x="280" y="17" width="9" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_seperate.png" id="gRh-QW-mbo">
+                            <rect key="frame" x="1" y="50" width="298" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YwG-qh-dAZ">
+                            <rect key="frame" x="0.0" y="50" width="300" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="已发布的贷款" backgroundImage="block_bottom_01.png">
+                                <color key="titleColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="block_bottom_02.png"/>
+                            <connections>
+                                <action selector="myBorrowedAction:" destination="-1" eventType="touchUpInside" id="kej-Zs-oQP"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_published_loan.png" id="Bth-Bd-5wg">
+                            <rect key="frame" x="19" y="62" width="19" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right_more.png" id="Zwo-zh-2sc">
+                            <rect key="frame" x="280" y="66" width="9" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="1pN-h7-wfj">
+                    <rect key="frame" x="10" y="530" width="300" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jpj-R3-934">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="修改密码" backgroundImage="block_whole_01.png">
+                                <color key="titleColor" red="0.26274509800000001" green="0.2156862745" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="block_whole_02.png"/>
+                            <connections>
+                                <action selector="resetPwdAction:" destination="-1" eventType="touchUpInside" id="wMY-mT-Z3N"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_modify_password.png" id="cc5-64-H9k">
+                            <rect key="frame" x="20" y="14" width="17" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right_more.png" id="KE7-Nd-Ozd">
+                            <rect key="frame" x="280" y="17" width="9" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="bg_personal_center_top_bar.png" width="320" height="272"/>
+        <image name="bg_personal_center_user_level.png" width="50" height="19"/>
+        <image name="bg_personal_center_user_money_bar.png" width="320" height="75"/>
+        <image name="block_bottom_01.png" width="302" height="50"/>
+        <image name="block_bottom_02.png" width="302" height="50"/>
+        <image name="block_middle_01.png" width="302" height="50"/>
+        <image name="block_middle_02.png" width="302" height="50"/>
+        <image name="block_top_01.png" width="302" height="50"/>
+        <image name="block_top_02.png" width="302" height="50"/>
+        <image name="block_whole_01.png" width="300" height="50"/>
+        <image name="block_whole_02.png" width="300" height="50"/>
+        <image name="ic_arrow_right_more.png" width="9" height="16"/>
+        <image name="ic_bid_recorder.png" width="20" height="20"/>
+        <image name="ic_bond_transfer.png" width="22" height="23"/>
+        <image name="ic_modify_password.png" width="17" height="21"/>
+        <image name="ic_my_interest_bid.png" width="21" height="21"/>
+        <image name="ic_my_investment.png" width="27" height="24"/>
+        <image name="ic_published_loan.png" width="19" height="23"/>
+        <image name="ic_recharge_withdrawals.png" width="26" height="26"/>
+        <image name="ic_repay_loans.png" width="23" height="22"/>
+        <image name="line_seperate.png" width="254" height="1"/>
+        <image name="line_vertical_seperate.png" width="107" height="38"/>
+    </resources>
+</document>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>app_name</key>
+	<string>p2p</string>
+	<key>version_version</key>
+	<string>2014082001</string>
+	<key>version_name</key>
+	<string>1.0.1</string>
+	<key>host</key>
+	<string></string>
+	<key>domain</key>
+	<string>www.irongp2p.com</string>
+	<key>api</key>
+	<string>mapi/index.php</string>
+	<key>system_id</key>
+	<string></string>
+	<key>soft_type</key>
+	<string></string>
+	<key>dev_type</key>
+	<string></string>
+	<key>user_version</key>
+	<string></string>
+	<key>baidu_map_key</key>
+	<string>3qWzUdXPOIFvk8cvBseNS5E5</string>
+	<key>umeng_key</key>
+	<string>52f82d6a56240b43e00514f5</string>
+</dict>
+</plist>
